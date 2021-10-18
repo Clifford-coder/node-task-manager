@@ -7,6 +7,7 @@ const connectDB = require('./db/connect');
 const app = express();
 
 //middlewares
+app.use(express.static('./public')); //to serve the frontend of the application
 app.use(express.json()); //to be able to get the date in req.body
 
 //routes
